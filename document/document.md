@@ -63,9 +63,12 @@ Path中增加%MAVEN_HOME%/bin;%JAVA_HOME%/bin;
 
 ```
   mvn archetype:generate -DarchetypeGroupId=io.cucumber -DarchetypeArtifactId=cucumber-archetype -DarchetypeVersion=2.3.1.2 -DgroupId=hellocucumber -DartifactId=hellocucumber -Dpackage=hellocucumber -Dversion=1.0.0-SNAPSHOT -DinteractiveMode=false
-  
+```
 
 3. 按照[https://docs.cucumber.io/guides/10-minute-tutorial/](https://docs.cucumber.io/guides/10-minute-tutorial/)中的说明修改对应文件。
 4. 在项目目录中[demo的目录是hellocucumber]执行 mvn test 
 
+
 # 引入Selenium
+
+
