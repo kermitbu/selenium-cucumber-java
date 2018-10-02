@@ -28,7 +28,7 @@ Path中增加%MAVEN_HOME%/bin;%JAVA_HOME%/bin;
 
 修改%MAVEN_HOME%/conf/settings.xml中的mirrors标签,像下面这样增加镜像路径
 
-```xml
+```
 <mirrors>
     <!-- mirror
      | Specifies a repository mirror site to use instead of a given repository. The repository that
@@ -56,4 +56,14 @@ Path中增加%MAVEN_HOME%/bin;%JAVA_HOME%/bin;
     </mirror>
 </mirrors>
 ```
-2. 修改环境变
+# 创建项目
+
+1. 创建一个文件夹存放文件
+2. 进入文件夹，CMD执行如下命令 (下面是Cucumber官网给出的创建工程的Demo, 可根据实际情况调整参数)
+
+```
+  mvn archetype:generate -DarchetypeGroupId=io.cucumber -DarchetypeArtifactId=cucumber-archetype -DarchetypeVersion=2.3.1.2 -DgroupId=hellocucumber -DartifactId=hellocucumber -Dpackage=hellocucumber -Dversion=1.0.0-SNAPSHOT -DinteractiveMode=false
+  
+
+3. 按照[https://docs.cucumber.io/guides/10-minute-tutorial/](https://docs.cucumber.io/guides/10-minute-tutorial/)中的说明修改对应文件。
+4. 在项目目录中[demo的目录是hellocucumber]执行 mvn test 
